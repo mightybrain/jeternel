@@ -1,0 +1,31 @@
+.tags
+    &__list
+        display flex
+        flex-wrap wrap
+        justify-content center
+        margin 0 0 -12px 0
+        padding 0
+        list-style none
+
+    &__link
+        position relative
+        display inline-block
+        padding 8px 17px
+        font-family "Helvetica-Neue"
+        font-size 13px
+        line-height 16px
+        font-weight 300
+        color black
+        text-decoration none
+        outline none
+        border 1px solid light-gray
+        border-radius 16.5px
+        background-color rgba(231 231 231 0)
+        transition background-color .5s 0s ease
+
+        &:hover
+            background-color rgba(231 231 231 .20)
+
+.tags--centered
+    & .tags__item
+        margin 0 6px 12px 6px

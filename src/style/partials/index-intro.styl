@@ -1,0 +1,101 @@
+.index-intro
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    box-sizing border-box
+    width 100%
+    min-height 100vh
+    padding 150px 0
+    overflow hidden
+    background-color black
+
+    &__video
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        display block
+        width 100%
+        height 100%
+        object-fit cover
+        opacity .5
+
+    &__info
+        position relative
+        display flex
+        flex-direction column
+        align-items center
+
+    &__heading
+        display flex
+        flex-wrap nowrap
+        perspective 960px
+        perspective-origin 0 50%
+        @media tablet-landscape-small
+            transform scale(.6)
+        @media phone
+            transform scale(.3)
+
+        & img
+            position relative
+            top 0
+            display block
+            transform rotateY(0)
+            opacity 1
+
+            &:nth-child(1)
+                transition transform 1.5s 0s ease, opacity 1.5s 0s ease, top 1.5s 0s ease
+
+            &:nth-child(2)
+                transition transform 1.5s .1s ease, opacity 1.5s .1s ease, top 1.5s .1s ease
+
+            &:nth-child(3)
+                transition transform 1.5s .2s ease, opacity 1.5s .2s ease, top 1.5s .2s ease
+
+            &:nth-child(4)
+                transition transform 1.5s .3s ease, opacity 1.5s .3s ease, top 1.5s .3s ease
+
+            &:nth-child(5)
+                transition transform 1.5s .4s ease, opacity 1.5s .4s ease, top 1.5s .4s ease
+
+            &:nth-child(6)
+                transition transform 1.5s .5s ease, opacity 1.5s .5s ease, top 1.5s .5s ease
+
+            &:nth-child(7)
+                transition transform 1.5s .6s ease, opacity 1.5s .6s ease, top 1.5s .6s ease
+
+            &:nth-child(8)
+                transition transform 1.5s .7s ease, opacity 1.5s .7s ease, top 1.5s .7s ease
+
+    &__description
+        opacity 1
+        max-width 404px
+        margin 32px 0 0 0
+        text-align center
+        transition opacity 1.5s 1s ease
+        @media tablet-landscape-small
+            margin -10px 0 0 0
+        @media phone
+            max-width 280px
+            margin -60px 0 0 0
+
+        & p:not([class])
+            margin 0
+            font-family "Helvetica-Neue"
+            font-size 15px
+            line-height 25px
+            font-weight 300
+            color white
+
+        & p:not([class]) + p:not([class])
+            margin 24px 0 0 0
+
+.js-animated-showing
+    & .index-intro__heading img
+        top 50px
+        opacity 0
+        transform rotateY(45deg)
+
+    & .index-intro__description
+        opacity 0

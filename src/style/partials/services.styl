@@ -1,0 +1,143 @@
+.services
+    &--index
+        @media tablet-landscape-medium
+            box-sizing border-box
+            width calc(100% - 80px)
+            margin 0 auto
+            padding 40px 0
+        @media tablet-portrait
+            width calc(100% - 60px)
+            padding 30px 0
+        @media phone
+            width calc(100% - 40px)
+            padding 20px 0 50px 0
+
+    &__list
+        display flex
+        flex-wrap wrap
+        margin 0
+        padding 0
+        list-style none
+        @media tablet-landscape-medium
+            justify-content space-between
+            margin 0 0 -60px 0
+        @media phone
+            flex-direction column
+
+    &__item
+        @media tablet-landscape-medium
+            margin 0 0 60px 0
+
+.services--index
+    & .service-preview
+        width 50%
+        @media tablet-landscape-medium
+            width calc(50% - 20px)
+            text-align center
+        @media tablet-portrait
+            width calc(50% - 15px)
+        @media phone
+            width 100%
+
+        &__container
+            position relative
+            padding-top 100%
+            @media tablet-landscape-medium
+                padding 0
+
+        &__wrapper
+            position absolute
+            top 0
+            left 0
+            width 100%
+            @media tablet-landscape-medium
+                position static
+
+        &__image-wrapper
+            position relative
+            padding-top 100%
+            background-color black
+            overflow hidden
+            @media tablet-landscape-medium
+                margin 0 0 30px 0
+
+        &__image
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            width 101%
+            height 101%
+            object-fit cover
+            opacity .75
+            transition transform 1s 0s ease
+
+            &:hover
+                transform translate(-50%, -50%) scale(1.05)
+
+        &__title
+            position absolute
+            left 50%
+            transform translateX(-50%)
+            bottom 100px
+            text-align center
+            font-family "Helvetica-Neue"
+            font-size 12px
+            line-height 22px
+            font-weight 300
+            color white
+            text-transform uppercase
+            letter-spacing 3px
+            @media tablet-landscape-medium
+                position static
+
+            &-link
+                position absolute
+                left 50%
+                transform translateX(-50%)
+                bottom 93px
+                max-width 436px
+                text-align center
+                font-family "Helvetica-Neue"
+                font-size 12px
+                line-height 22px
+                font-weight 300
+                color white
+                text-transform uppercase
+                letter-spacing 3px
+                text-decoration none
+                outline none
+                opacity 1
+                transition opacity .3s 0s ease
+                @media tablet-landscape-medium
+                    position static
+                    color main-gold
+
+                &:hover
+                    opacity .5
+
+    & .service-preview:nth-child(4n+1),
+    & .service-preview:nth-child(4n+4)
+
+        & .service-preview__wrapper
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            width 100%
+            max-width 436px
+            @media laptop
+                max-width 350px
+            @media tablet-landscape-medium
+                transform none
+                max-width none
+
+        & .service-preview__title
+            top calc(100% + 44px)
+            bottom auto
+            width 100%
+            max-width none
+
+            &-link
+                position static
+                max-width none
+                color main-gold

@@ -1,0 +1,85 @@
+svg path,
+svg line,
+svg rect,
+svg polygon,
+svg circle
+    fill inherit !important
+    stroke inherit !important
+    stroke-width inherit !important
+
+.bubble-container
+    position absolute
+
+.bubble
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    border-radius 50%
+    animation bubble
+    animation-timing-function linear
+
+.common
+    &__arrow
+        width 21px
+        height 41px
+        outline none
+        cursor pointer
+
+        & svg
+            fill none
+            stroke black
+            stroke-width 1.2px
+            stroke-dasharray 57
+            stroke-dashoffset 0
+            transition stroke-dashoffset 1s 0s ease
+
+        &:hover 
+            & svg
+                stroke-dashoffset 114
+
+    &__button
+        position relative
+        padding 36px 70px 34px 70px
+        margin 0
+        font-family "Helvetica-Neue"
+        font-size 12px
+        line-height 19px
+        font-weight 300
+        text-transform uppercase
+        letter-spacing 3px
+        color black
+        background none
+        background-color white
+        border none
+        outline none
+        overflow hidden
+        cursor pointer
+        transition background-color .5s 0s ease
+        @media laptop
+            padding 30px 50px 28px 50px
+
+        &--gold
+            background-color light-gold
+            color white
+
+            &:hover
+                background-color lightest-gold
+
+        & .bubble-container
+            opacity .2
+
+        & .bubble
+            background-color white
+            animation-duration .4s
+
+.common__arrow.swiper-button-disabled
+    cursor default 
+    
+    & svg
+        stroke light-gray
+
+    &:hover
+        & svg
+            stroke-dashoffset 0
+

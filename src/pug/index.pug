@@ -1,0 +1,552 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        //link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Центр косметологии Jeternel
+    body.content
+        header.head
+            div.head__burger.js-burger
+                div.head__burger-cross
+            div.head__logo
+                //a.head__logo-link(href="")
+                img.head__logo-image(src="images/logo-sign_white.svg", alt="")
+            a.head__phone(href="tel:")
+                |+7 351 225 75 50
+            button.head__search-button
+                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20")
+                    circle(cx="9.5" cy="9.5" r="9")
+                    line(x1="15.863" y1="15.864" x2="19.487" y2="19.488")
+            div.menu.head__menu
+                div.menu__container
+                    aside.menu__aside
+                        div.menu__aside-inner
+                            div.menu__logo
+                                img.menu__logo-image(src="images/logo.svg", alt="")
+                            div.menu__branches
+                                ul.menu__branches-list
+                                    li.menu__branches-item
+                                        span.menu__branches-address
+                                            |Воровского, 13
+                                        a.menu__branches-phone(href="tel:")
+                                            |+7 351 225 75 10
+                                    li.menu__branches-item
+                                        span.menu__branches-address
+                                            |Комсомольский проспект, 48
+                                        a.menu__branches-phone(href="tel:")
+                                            |+7 351 225 75 50
+                                    li.menu__branches-item
+                                        span.menu__branches-address
+                                            |Проспект Ленина, 66
+                                        a.menu__branches-phone(href="tel:")
+                                            |+7 351 225 75 20
+                                a.menu__branches-link(href="")
+                                    |Все адреса и контакты
+                            button.common__button.common__button--gold.menu__reserve-button.js-bubble-hover
+                                span
+                                    |Записаться на прием
+                    div.menu__wrapper
+                        div.menu__cols
+                            div.menu__col
+                                ul.menu__list
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Услуги
+                                        ul.menu__submenu-list
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Диагностика
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Косметология
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Дерматология
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Управление возрастом и здоровье
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Эндокринология и диетология
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Трихология
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Терапия
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Beauty акцент
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Косметология для мужчин
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Проблемы
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Результаты
+                            div.menu__col
+                                ul.menu__list
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |О компании
+                                        ul.menu__submenu-list
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Сотрудники
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |О лаборатории
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Лицензии и достижения
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Отзывы
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Наша атмосфера
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Вакансии
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Новости
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Аппараты
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Акции
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Вопросы и ответы
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Блог
+        main
+            section.index-intro
+                video.index-intro__video(src="video/teaser.mp4" autoplay muted loop)
+                div.index-intro__info.js-animated-showing
+                    div.index-intro__heading
+                        img(src="images/j.svg", alt="")
+                        img(src="images/e'.svg", alt="")
+                        img(src="images/t.svg", alt="")
+                        img(src="images/e.svg", alt="")
+                        img(src="images/r.svg", alt="")
+                        img(src="images/n.svg", alt="")
+                        img(src="images/e.svg", alt="")
+                        img(src="images/l.svg", alt="")
+                    div.index-intro__description
+                        p
+                            |Лучшие мировые технологии омоложения, комплексный сервис от базового ухода до революционных косметологических новаций.
+            section.services.services--index
+                ul.services__list
+                    li.service-preview.services__item
+                        div.service-preview__container
+                            div.service-preview__wrapper
+                                div.service-preview__image-wrapper
+                                    a.service-preview__image-link(href="")
+                                        img.service-preview__image(src="images/services/service-02.jpg", alt="")
+                                span.service-preview__title
+                                    a.service-preview__title-link(href="")
+                                        |Эстетическая косметология
+                    li.service-preview.services__item
+                        div.service-preview__container
+                            div.service-preview__wrapper
+                                div.service-preview__image-wrapper
+                                    a.service-preview__image-link(href="")
+                                        img.service-preview__image(src="images/services/service-01.jpg", alt="")
+                                //span.service-preview__title
+                                a.service-preview__title-link(href="")
+                                    |Аппаратная косметология
+                    li.service-preview.services__item
+                        div.service-preview__container
+                            div.service-preview__wrapper
+                                div.service-preview__image-wrapper
+                                    a.service-preview__image-link(href="")
+                                        img.service-preview__image(src="images/services/service-04.jpg", alt="")
+                                //span.service-preview__title
+                                a.service-preview__title-link(href="")
+                                    |Коррекция фигуры
+                    li.service-preview.services__item
+                        div.service-preview__container
+                            div.service-preview__wrapper
+                                div.service-preview__image-wrapper
+                                    a.service-preview__image-link(href="")
+                                        img.service-preview__image(src="images/services/service-03.jpg", alt="")
+                                span.service-preview__title
+                                    a.service-preview__title-link(href="")
+                                        |Все услуги
+            section.appeal
+                div.appeal__top.js-animated-showing
+                    div.appeal__background
+                        img(src="images/j.svg", alt="")
+                        img(src="images/e'.svg", alt="")
+                        img(src="images/t.svg", alt="")
+                        img(src="images/e.svg", alt="")
+                        img(src="images/r.svg", alt="")
+                        img(src="images/n.svg", alt="")
+                        img(src="images/e.svg", alt="")
+                        img(src="images/l.svg", alt="")
+                    img.appeal__photo(src="images/appeal-01.png", alt="")
+                    div.appeal__hint
+                        span.appeal__name
+                            |Орлова Елизавета
+                        span.appeal__position
+                            |главный косметолог центра
+                div.appeal__bottom
+                    div.appeal__description
+                        p
+                            |Мы не идем на компромиссы в вопросах обслуживания — высокий сервис, лучшие европейские технологии, атмосфера красоты и индивидуальный подход к каждому клиенту!
+                    button.common__button.common__button--gold.appeal__button.js-bubble-hover
+                        span
+                            |Записаться на прием
+            section.capabilities
+                div.capabilities__info
+                    div.capabilities__description
+                        p
+                            |Мы всегда лечим причину, а не только её следствие!
+                div.capabilities-slider
+                    div.capabilities-slider__container.swiper-container.js-capabilities-slider
+                        ul.capabilities-slider__list.swiper-wrapper
+                            li.capabilities-slider__item.swiper-slide
+                                div.capabilities-slider__image-wrapper
+                                    a.capabilities-slider__image-link(href="")
+                                        img.capabilities-slider__image(src="images/capabilities/capability-01.jpg", alt="")
+                                span.capabilities-slider__title
+                                    a.capabilities-slider__title-link(href="")
+                                        |Возрастные изменения кожи
+                            li.capabilities-slider__item.swiper-slide
+                                div.capabilities-slider__image-wrapper
+                                    a.capabilities-slider__image-link(href="")
+                                        img.capabilities-slider__image(src="images/capabilities/capability-02.jpg", alt="")
+                                span.capabilities-slider__title
+                                    a.capabilities-slider__title-link(href="")
+                                        |Выпадение волос
+                            li.capabilities-slider__item.swiper-slide
+                                div.capabilities-slider__image-wrapper
+                                    a.capabilities-slider__image-link(href="")
+                                        img.capabilities-slider__image(src="images/capabilities/capability-01.jpg", alt="")
+                                span.capabilities-slider__title
+                                    a.capabilities-slider__title-link(href="")
+                                        |Возрастные изменения кожи
+                    div.capabilities-slider__arrows
+                        div.common__arrow.common__arrow--left.capabilities-slider__arrow-left.js-capabilities-slider-arrow-left
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 41")
+                                polyline(points="21,41 0.5,20.5 21,0")
+                        div.common__arrow.common__arrow--right.capabilities-slider__arrow-right.js-capabilities-slider-arrow-right
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 41")
+                                polyline(points="0,0 20.5,20.5 0,41")
+                div.capabilities__link-container
+                    a.capabilities__link(href="")
+                        |Все сферы услуг
+            section.results
+                div.results__description
+                    p
+                        |Комплексный сервис, от базового ухода до революционных косметологических новаций.
+                ul.results__list
+                    li.result-preview.results__item
+                        div.result-preview__image-container.js-result-container
+                            div.result-preview__image-wrapper
+                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                span.result-preview__hint
+                                    |После
+                            div.result-preview__image-wrapper.js-result-overlay
+                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                span.result-preview__hint
+                                    |До
+                        div.tags.tags--centered.result-preview__tags
+                            ul.tags__list
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |Хроностарение
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |RF-лифтинг
+                    li.result-preview.results__item
+                        div.result-preview__image-container.js-result-container
+                            div.result-preview__image-wrapper
+                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                span.result-preview__hint
+                                    |После
+                            div.result-preview__image-wrapper.js-result-overlay
+                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                span.result-preview__hint
+                                    |До
+                        div.tags.tags--centered.result-preview__tags
+                            ul.tags__list
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |Хроностарение
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |RF-лифтинг
+                    li.result-preview.results__item
+                        div.result-preview__image-container.js-result-container
+                            div.result-preview__image-wrapper
+                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                span.result-preview__hint
+                                    |После
+                            div.result-preview__image-wrapper.js-result-overlay
+                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                span.result-preview__hint
+                                    |До
+                        div.tags.tags--centered.result-preview__tags
+                            ul.tags__list
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |Хроностарение
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |RF-лифтинг
+                    li.result-preview.results__item
+                        div.result-preview__image-container.js-result-container
+                            div.result-preview__image-wrapper
+                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                span.result-preview__hint
+                                    |После
+                            div.result-preview__image-wrapper.js-result-overlay
+                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                span.result-preview__hint
+                                    |До
+                        div.tags.tags--centered.result-preview__tags
+                            ul.tags__list
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |Хроностарение
+                                li.tags__item
+                                    a.tags__link(href="")
+                                        |RF-лифтинг
+                div.results__link-container
+                    a.results__link(href="")
+                        |Все результаты
+            section.appeal
+                div.appeal__top.js-animated-showing
+                    div.appeal__background
+                        img(src="images/j.svg", alt="")
+                        img(src="images/e'.svg", alt="")
+                        img(src="images/t.svg", alt="")
+                        img(src="images/e.svg", alt="")
+                        img(src="images/r.svg", alt="")
+                        img(src="images/n.svg", alt="")
+                        img(src="images/e.svg", alt="")
+                        img(src="images/l.svg", alt="")
+                    img.appeal__photo(src="images/appeal-01.png", alt="")
+                    div.appeal__hint
+                        span.appeal__name
+                            |Орлова Елизавета
+                        span.appeal__position
+                            |главный косметолог центра
+                div.appeal__bottom
+                    div.appeal__description
+                        p
+                            |Ждем вас в лаборатории красоты Jeternel!
+                        p
+                            |Лучшие мировые технологии омоложения, коррекции эстетических недостатков и лечения кожных заболеваний. Оригинальное оборудование и косметологические препараты последнего поколения.
+                    button.common__button.common__button--gold.appeal__button.js-bubble-hover
+                        span
+                            |Получить бесплатную консультацию
+            section.sales
+                div.sales__info
+                    span.sales__heading
+                        |Акции
+                div.sales-slider
+                    div.sales-slider__container.swiper-container.js-sales-slider
+                        ul.sales-slider__list.swiper-wrapper
+                            li.sales-slider__item.swiper-slide
+                                div.sales-slider__image-wrapper
+                                    a.sales-slider__image-link(href="")
+                                        img.sales-slider__image(src="images/sales/sale-01.jpg", alt="")
+                                span.sales-slider__title
+                                    a.sales-slider__title-link(href="")
+                                        |Безупречность во всем!
+                                p.sales-slider__description
+                                    |При прохождении Альтератерапии от 406 линий процедура «Обогащённая PRP» в подарок! Только на Воровского, 13.
+                            li.sales-slider__item.swiper-slide
+                                div.sales-slider__image-wrapper
+                                    a.sales-slider__image-link(href="")
+                                        img.sales-slider__image(src="images/sales/sale-02.jpg", alt="")
+                                span.sales-slider__title
+                                    a.sales-slider__title-link(href="")
+                                        |Прикоснитесь к красоте будущего сейчас!
+                                p.sales-slider__description
+                                    |Фотодинамическая терапия. При покупке курса скидка 10%.
+                            li.sales-slider__item.swiper-slide
+                                div.sales-slider__image-wrapper
+                                    a.sales-slider__image-link(href="")
+                                        img.sales-slider__image(src="images/sales/sale-01.jpg", alt="")
+                                span.sales-slider__title
+                                    a.sales-slider__title-link(href="")
+                                        |Безупречность во всем!
+                                p.sales-slider__description
+                                    |При прохождении Альтератерапии от 406 линий процедура «Обогащённая PRP» в подарок! Только на Воровского, 13.
+                            li.sales-slider__item.swiper-slide
+                                div.sales-slider__image-wrapper
+                                    a.sales-slider__image-link(href="")
+                                        img.sales-slider__image(src="images/sales/sale-02.jpg", alt="")
+                                span.sales-slider__title
+                                    a.sales-slider__title-link(href="")
+                                        |Прикоснитесь к красоте будущего сейчас!
+                                p.sales-slider__description
+                                    |Фотодинамическая терапия. При покупке курса скидка 10%.
+                            li.sales-slider__item.swiper-slide
+                                div.sales-slider__image-wrapper
+                                    a.sales-slider__image-link(href="")
+                                        img.sales-slider__image(src="images/sales/sale-01.jpg", alt="")
+                                span.sales-slider__title
+                                    a.sales-slider__title-link(href="")
+                                        |Безупречность во всем!
+                                p.sales-slider__description
+                                    |При прохождении Альтератерапии от 406 линий процедура «Обогащённая PRP» в подарок! Только на Воровского, 13.
+                            li.sales-slider__item.swiper-slide
+                                div.sales-slider__image-wrapper
+                                    a.sales-slider__image-link(href="")
+                                        img.sales-slider__image(src="images/sales/sale-02.jpg", alt="")
+                                span.sales-slider__title
+                                    a.sales-slider__title-link(href="")
+                                        |Прикоснитесь к красоте будущего сейчас!
+                                p.sales-slider__description
+                                    |Фотодинамическая терапия. При покупке курса скидка 10%.
+                    div.sales-slider__arrows
+                        div.common__arrow.common__arrow--left.sales-slider__arrow-left.js-sales-slider-arrow-left
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 41")
+                                polyline(points="21,41 0.5,20.5 21,0")
+                        div.common__arrow.common__arrow--right.sales-slider__arrow-right.js-sales-slider-arrow-right
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 41")
+                                polyline(points="0,0 20.5,20.5 0,41")
+                div.sales__link-container
+                    a.sales__link(href="")
+                        |Все акции
+            section.location
+                div.location__description
+                    p
+                        |Ждем вас каждый день на консультации в любом из наших центров!
+                div#map.location__map
+        footer.foot
+            div.foot__top
+                div.foot__branches
+                    ul.foot__branches-list
+                        li.foot__branches-item
+                            span.foot__branches-address
+                                |Воровского, 13
+                            a.foot__branches-phone(href="")
+                                |+7 351 225 75 10
+                        li.foot__branches-item
+                            span.foot__branches-address
+                                |Комсомольский проспект, 48
+                            a.foot__branches-phone(href="")
+                                |+7 351 225 75 50
+                        li.foot__branches-item
+                            span.foot__branches-address
+                                |проспект Ленина, 66
+                            a.foot__branches-phone(href="")
+                                |+7 351 225 75 20
+                        li.foot__branches-item
+                            span.foot__branches-address
+                                |Братьев Кашириных, 131б
+                            a.foot__branches-phone(href="")
+                                |+7 351 225 75 50
+                nav.sitemap
+                    ul.sitemap__list
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |О компании
+                            ul.sitemap__submenu-list
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Сотрудники
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |О лаборатории
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Лицензии и достижения
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Отзывы
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Наша атмосфера
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Вакансии
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Новости
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Аппараты
+                    ul.sitemap__list
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |Услуги
+                            ul.sitemap__submenu-list
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Аппаратная косметология
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Инъекционная косметология
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Эстетическая косметология
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Коррекция фигуры
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Эпиляция
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |SPA
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Ногтевой сервис
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Программы диагностики
+                                li.sitemap__submenu-item
+                                    a.sitemap__submenu-link(href="")
+                                        |Прием узких специалистов
+                    ul.sitemap__list
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |Проблемы
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |Результаты
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |Акции
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |Вопросы и ответы
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |Блог
+                        li.sitemap__item
+                            a.sitemap__link(href="")
+                                |Контактная информация
+            div.foot__bottom
+                span.foot__site-copyright
+                    |«ООО» Вдохновение, 2020
+                div.developer.foot__developer
+                    a.developer__link(href="" target="_blank")
+                        |Dextra
+                    span.developer__hint
+                        |Разработка
+                        br
+                        |сайта
+                a.foot__personal-link(href="file:")
+                    |Положение об обработке персональных данных
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")
+
+
