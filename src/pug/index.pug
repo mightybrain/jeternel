@@ -147,36 +147,36 @@ html(lang="ru")
                             |Лучшие мировые технологии омоложения, комплексный сервис от базового ухода до революционных косметологических новаций.
             section.services.services--index
                 ul.services__list
-                    li.service-preview.services__item
-                        div.service-preview__container
-                            div.service-preview__wrapper
+                    li.services__item-wrapper
+                        div.services__item
+                            div.service-preview
                                 div.service-preview__image-wrapper
                                     a.service-preview__image-link(href="")
                                         img.service-preview__image(src="images/services/service-02.jpg", alt="")
                                 span.service-preview__title
                                     a.service-preview__title-link(href="")
                                         |Эстетическая косметология
-                    li.service-preview.services__item
-                        div.service-preview__container
-                            div.service-preview__wrapper
+                    li.services__item-wrapper
+                        div.services__item
+                            div.service-preview.service-preview--link-overflow
                                 div.service-preview__image-wrapper
                                     a.service-preview__image-link(href="")
                                         img.service-preview__image(src="images/services/service-01.jpg", alt="")
                                 //span.service-preview__title
                                 a.service-preview__title-link(href="")
                                     |Аппаратная косметология
-                    li.service-preview.services__item
-                        div.service-preview__container
-                            div.service-preview__wrapper
+                    li.services__item-wrapper
+                        div.services__item
+                            div.service-preview.service-preview--link-overflow
                                 div.service-preview__image-wrapper
                                     a.service-preview__image-link(href="")
                                         img.service-preview__image(src="images/services/service-04.jpg", alt="")
                                 //span.service-preview__title
                                 a.service-preview__title-link(href="")
                                     |Коррекция фигуры
-                    li.service-preview.services__item
-                        div.service-preview__container
-                            div.service-preview__wrapper
+                    li.services__item-wrapper
+                        div.services__item
+                            div.service-preview
                                 div.service-preview__image-wrapper
                                     a.service-preview__image-link(href="")
                                         img.service-preview__image(src="images/services/service-03.jpg", alt="")
@@ -207,7 +207,7 @@ html(lang="ru")
                     button.common__button.common__button--gold.appeal__button.js-bubble-hover
                         span
                             |Записаться на прием
-            section.capabilities
+            section.capabilities.capabilities--index
                 div.capabilities__info
                     div.capabilities__description
                         p
@@ -246,83 +246,91 @@ html(lang="ru")
                 div.capabilities__link-container
                     a.capabilities__link(href="")
                         |Все сферы услуг
-            section.results
+            section.results.results--index
                 div.results__description
                     p
                         |Комплексный сервис, от базового ухода до революционных косметологических новаций.
                 ul.results__list
-                    li.result-preview.results__item
-                        div.result-preview__image-container.js-result-container
-                            div.result-preview__image-wrapper
-                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
-                                span.result-preview__hint
-                                    |После
-                            div.result-preview__image-wrapper.js-result-overlay
-                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
-                                span.result-preview__hint
-                                    |До
-                        div.tags.tags--centered.result-preview__tags
-                            ul.tags__list
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |Хроностарение
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |RF-лифтинг
-                    li.result-preview.results__item
-                        div.result-preview__image-container.js-result-container
-                            div.result-preview__image-wrapper
-                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
-                                span.result-preview__hint
-                                    |После
-                            div.result-preview__image-wrapper.js-result-overlay
-                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
-                                span.result-preview__hint
-                                    |До
-                        div.tags.tags--centered.result-preview__tags
-                            ul.tags__list
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |Хроностарение
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |RF-лифтинг
-                    li.result-preview.results__item
-                        div.result-preview__image-container.js-result-container
-                            div.result-preview__image-wrapper
-                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
-                                span.result-preview__hint
-                                    |После
-                            div.result-preview__image-wrapper.js-result-overlay
-                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
-                                span.result-preview__hint
-                                    |До
-                        div.tags.tags--centered.result-preview__tags
-                            ul.tags__list
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |Хроностарение
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |RF-лифтинг
-                    li.result-preview.results__item
-                        div.result-preview__image-container.js-result-container
-                            div.result-preview__image-wrapper
-                                img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
-                                span.result-preview__hint
-                                    |После
-                            div.result-preview__image-wrapper.js-result-overlay
-                                img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
-                                span.result-preview__hint
-                                    |До
-                        div.tags.tags--centered.result-preview__tags
-                            ul.tags__list
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |Хроностарение
-                                li.tags__item
-                                    a.tags__link(href="")
-                                        |RF-лифтинг
+                    li.results__item
+                        div.result-preview
+                            div.result-preview__image-container.js-result-container
+                                div.result-preview__image-wrapper
+                                    img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                    span.result-preview__hint
+                                        |После
+                                div.result-preview__image-wrapper.js-result-overlay
+                                    img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                    span.result-preview__hint
+                                        |До
+                            div.result-preview__tags
+                                div.tags
+                                    ul.tags__list
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |Хроностарение
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |RF-лифтинг
+                    li.results__item
+                        div.result-preview
+                            div.result-preview__image-container.js-result-container
+                                div.result-preview__image-wrapper
+                                    img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                    span.result-preview__hint
+                                        |После
+                                div.result-preview__image-wrapper.js-result-overlay
+                                    img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                    span.result-preview__hint
+                                        |До
+                            div.result-preview__tags
+                                div.tags
+                                    ul.tags__list
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |Хроностарение
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |RF-лифтинг
+                    li.results__item
+                        div.result-preview
+                            div.result-preview__image-container.js-result-container
+                                div.result-preview__image-wrapper
+                                    img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                    span.result-preview__hint
+                                        |После
+                                div.result-preview__image-wrapper.js-result-overlay
+                                    img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                    span.result-preview__hint
+                                        |До
+                            div.result-preview__tags
+                                div.tags
+                                    ul.tags__list
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |Хроностарение
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |RF-лифтинг
+                    li.results__item
+                        div.result-preview
+                            div.result-preview__image-container.js-result-container
+                                div.result-preview__image-wrapper
+                                    img.result-preview__image(src="images/results/result-01/result-01-after.jpg", alt="")
+                                    span.result-preview__hint
+                                        |После
+                                div.result-preview__image-wrapper.js-result-overlay
+                                    img.result-preview__image(src="images/results/result-01/result-01-before.jpg", alt="")
+                                    span.result-preview__hint
+                                        |До
+                            div.result-preview__tags
+                                div.tags
+                                    ul.tags__list
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |Хроностарение
+                                        li.tags__item
+                                            a.tags__link(href="")
+                                                |RF-лифтинг
                 div.results__link-container
                     a.results__link(href="")
                         |Все результаты
@@ -352,7 +360,7 @@ html(lang="ru")
                     button.common__button.common__button--gold.appeal__button.js-bubble-hover
                         span
                             |Получить бесплатную консультацию
-            section.sales
+            section.sales.sales--index
                 div.sales__info
                     span.sales__heading
                         |Акции
@@ -452,87 +460,88 @@ html(lang="ru")
                                 |Братьев Кашириных, 131б
                             a.foot__branches-phone(href="")
                                 |+7 351 225 75 50
-                nav.sitemap
-                    ul.sitemap__list
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |О компании
-                            ul.sitemap__submenu-list
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Сотрудники
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |О лаборатории
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Лицензии и достижения
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Отзывы
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Наша атмосфера
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Вакансии
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Новости
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Аппараты
-                    ul.sitemap__list
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |Услуги
-                            ul.sitemap__submenu-list
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Аппаратная косметология
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Инъекционная косметология
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Эстетическая косметология
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Коррекция фигуры
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Эпиляция
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |SPA
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Ногтевой сервис
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Программы диагностики
-                                li.sitemap__submenu-item
-                                    a.sitemap__submenu-link(href="")
-                                        |Прием узких специалистов
-                    ul.sitemap__list
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |Проблемы
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |Результаты
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |Акции
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |Вопросы и ответы
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |Блог
-                        li.sitemap__item
-                            a.sitemap__link(href="")
-                                |Контактная информация
+                div.foot__sitemap
+                    nav.sitemap
+                        ul.sitemap__list
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |О компании
+                                ul.sitemap__submenu-list
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Сотрудники
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |О лаборатории
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Лицензии и достижения
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Отзывы
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Наша атмосфера
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Вакансии
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Новости
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Аппараты
+                        ul.sitemap__list
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |Услуги
+                                ul.sitemap__submenu-list
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Аппаратная косметология
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Инъекционная косметология
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Эстетическая косметология
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Коррекция фигуры
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Эпиляция
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |SPA
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Ногтевой сервис
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Программы диагностики
+                                    li.sitemap__submenu-item
+                                        a.sitemap__submenu-link(href="")
+                                            |Прием узких специалистов
+                        ul.sitemap__list
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |Проблемы
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |Результаты
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |Акции
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |Вопросы и ответы
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |Блог
+                            li.sitemap__item
+                                a.sitemap__link(href="")
+                                    |Контактная информация
             div.foot__bottom
                 span.foot__site-copyright
                     |«ООО» Вдохновение, 2020

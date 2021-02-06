@@ -1,15 +1,16 @@
 .results
-    max-width 1126px
-    margin 0 auto 166px auto
-    @media laptop
-        max-width 918px
-    @media tablet-landscape-medium
-        max-width 800px
-    @media tablet-landscape-small
-        width calc(100% - 60px)
-    @media phone
-        width calc(100% - 40px)
-        max-width 436px
+    &--index
+        max-width 1126px
+        margin 0 auto 166px auto
+        @media laptop
+            max-width 918px
+        @media tablet-landscape-medium
+            max-width 800px
+        @media tablet-landscape-small
+            width calc(100% - 60px)
+        @media phone
+            width calc(100% - 40px)
+            max-width 436px
 
     &__description
         max-width 710px
@@ -43,7 +44,17 @@
             flex-direction column
 
     &__item
+        width 436px
         margin 0 0 60px 0
+        @media laptop
+            width 350px
+        @media tablet-landscape-small
+            width 100%
+
+        &:nth-child(even)
+            margin 80px 0 60px 0
+            @media tablet-landscape-small
+                margin 0 0 60px 0
 
     &__link-container
         margin 82px 0 0 0
@@ -65,12 +76,6 @@
             opacity .5
 
 .result-preview
-    width 436px
-    @media laptop
-        width 350px
-    @media tablet-landscape-small
-        width 100%
-
     &__image-container
         position relative
         padding-top 100%
@@ -148,10 +153,4 @@
         margin 50px 0 0 0
         @media tablet-landscape-medium
             margin 30px 0 0 0
-
-.result-preview:nth-child(even)
-    & .result-preview__image-container
-        margin 80px 0 0 0
-        @media tablet-landscape-small
-            margin 0
 

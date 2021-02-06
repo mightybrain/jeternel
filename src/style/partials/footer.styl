@@ -55,6 +55,17 @@
             text-decoration none
             outline none
 
+    &__sitemap
+        width calc(75% - 24px)
+        @media tablet-landscape-small
+            width calc(100% + 40px)
+            margin 0 0 0 -40px
+        @media tablet-portrait
+            width calc(100% + 30px)
+            margin 0 0 0 -30px
+        @media phone
+            display none
+
     &__bottom
         display flex
         flex-direction column
@@ -85,15 +96,6 @@
 .sitemap
     display flex
     flex-wrap nowrap
-    width calc(75% - 24px)
-    @media tablet-landscape-small
-        width calc(100% + 40px)
-        margin 0 0 0 -40px
-    @media tablet-portrait
-        width calc(100% + 30px)
-        margin 0 0 0 -30px
-    @media phone
-        display none
     
     &__list
         width calc(100% / 3 - 96px / 3)

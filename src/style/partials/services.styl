@@ -24,120 +24,108 @@
         @media phone
             flex-direction column
 
-    &__item
-        @media tablet-landscape-medium
-            margin 0 0 60px 0
-
-.services--index
-    & .service-preview
+    &__item-wrapper
+        display flex
+        justify-content center
+        align-items center
         width 50%
         @media tablet-landscape-medium
+            display block
             width calc(50% - 20px)
+            margin 0 0 60px 0
             text-align center
         @media tablet-portrait
             width calc(50% - 15px)
         @media phone
             width 100%
 
-        &__container
+    &__item
+        width 100%
+        
+.services__item-wrapper:nth-child(4n+1),
+.services__item-wrapper:nth-child(4n+4)
+    & .services__item
+        max-width 436px
+        @media laptop
+            max-width 350px
+        @media tablet-landscape-medium
+            max-width none
+
+.service-preview
+    position relative
+    width 100%
+    padding-top 100%
+    @media tablet-landscape-medium
+        position static
+        padding-top 0
+
+    &__image-wrapper
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-color black
+        overflow hidden
+        @media tablet-landscape-medium
             position relative
+            height 0
+            margin 0 0 30px 0
             padding-top 100%
-            @media tablet-landscape-medium
-                padding 0
 
-        &__wrapper
-            position absolute
-            top 0
-            left 0
-            width 100%
-            @media tablet-landscape-medium
-                position static
+    &__image
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        display block
+        width 101%
+        height 101%
+        object-fit cover
+        opacity .75
+        transition transform 1s 0s ease
 
-        &__image-wrapper
-            position relative
-            padding-top 100%
-            background-color black
-            overflow hidden
-            @media tablet-landscape-medium
-                margin 0 0 30px 0
+        &:hover
+            transform translate(-50%, -50%) scale(1.05)
 
-        &__image
-            position absolute
-            top 50%
-            left 50%
-            transform translate(-50%, -50%)
-            width 101%
-            height 101%
-            object-fit cover
-            opacity .75
-            transition transform 1s 0s ease
+    &__title
+        position absolute
+        top calc(100% + 44px)
+        left 50%
+        transform translateX(-50%)
+        width 100%
+        text-align center
+        @media tablet-landscape-medium
+            position static
+            transform none
 
-            &:hover
-                transform translate(-50%, -50%) scale(1.05)
-
-        &__title
-            position absolute
-            left 50%
-            transform translateX(-50%)
-            bottom 100px
-            text-align center
+        &-link
             font-family "Helvetica-Neue"
             font-size 12px
             line-height 22px
             font-weight 300
-            color white
+            color main-gold
             text-transform uppercase
             letter-spacing 3px
-            @media tablet-landscape-medium
-                position static
+            text-decoration none
+            outline none
+            opacity 1
+            transition opacity .3s 0s ease
 
-            &-link
-                position absolute
-                left 50%
-                transform translateX(-50%)
-                bottom 93px
-                max-width 436px
-                text-align center
-                font-family "Helvetica-Neue"
-                font-size 12px
-                line-height 22px
-                font-weight 300
-                color white
-                text-transform uppercase
-                letter-spacing 3px
-                text-decoration none
-                outline none
-                opacity 1
-                transition opacity .3s 0s ease
-                @media tablet-landscape-medium
-                    position static
-                    color main-gold
+            &:hover
+                opacity .5
 
-                &:hover
-                    opacity .5
-
-    & .service-preview:nth-child(4n+1),
-    & .service-preview:nth-child(4n+4)
-
-        & .service-preview__wrapper
-            top 50%
-            left 50%
-            transform translate(-50%, -50%)
-            width 100%
-            max-width 436px
-            @media laptop
-                max-width 350px
-            @media tablet-landscape-medium
-                transform none
-                max-width none
-
-        & .service-preview__title
-            top calc(100% + 44px)
-            bottom auto
-            width 100%
+.service-preview--link-overflow
+    & .service-preview__title-link
+        position absolute
+        top auto
+        bottom 100px
+        left 50%
+        transform translateX(-50%)
+        max-width 436px
+        color white
+        @media tablet-landscape-medium
+            position static
             max-width none
-
-            &-link
-                position static
-                max-width none
-                color main-gold
+            transform none
+            color main-gold
